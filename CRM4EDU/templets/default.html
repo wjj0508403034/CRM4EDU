@@ -1,0 +1,285 @@
+﻿
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>SAP</title>
+	<meta name="Keywords" content="" /> 
+	<meta name="Description" content="" />   
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Robots" content="all" /> 
+	<meta name="Copyright" content="" />
+	<meta name="author" content="">
+	<meta name="Build" content="2015.1.8" /> 
+
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="../css/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" href="../css/master.css" type="text/css">
+	<link rel="stylesheet" href="../css/default.css" type="text/css">
+
+
+</head>
+
+<body>
+<div id="top">
+	<ul>
+		<li><a href="">蓝熊</a></li>
+		<li><a href="">个性化设置</a></li>
+		<li><a href="">学习中心</a></li>
+		<li><a href="">帮助</a></li>
+		<li><a href="">退出</a></li>
+	</ul>
+	<div class="notify"><a href=""><span class="glyphicon glyphicon-bell" aria-hidden="true"></span><i>6</i></a></div>
+</div>
+<div id="inside">
+	<div id="header">
+		<div class="menu">
+			<ul>
+				<li class="current "><a href="">首页</a></li>
+				<li><a href="customer.html">客户</a></li>
+				<li><a href="marketing.html">市场</a></li>
+				<li><a href="sales leads.html">销售</a></li>
+				<li><a href="activity.html">活动任务</a></li>
+				<li><a href="partner.html">合作伙伴</a></li>
+				<li><a href="education.html">教务</a></li>
+				<li><a href="product.html">产品服务</a></li>
+				<li><a href="human resource.html">人事</a></li>
+				<li><a href="analysis.html">分析</a></li>
+				<li><a href="system.html">系统</a></li>
+				<li><a id="menu-nav-btn"><span class="glyphicon glyphicon-list" aria-hidden="true"></span></a>
+					<div id="menu-nav" class="menu-nav">
+						<div class="menu-nav-con">
+							<h1>菜单定制</h1>
+							<a id="menu-nav-close" class="close"><span class="glyphicon glyphicon-remove-circle"></span></a>
+							<form>
+								<div class="all">
+									<h2>所有</h2>
+									<ul>
+									<!--
+									<li><div class="checkbox"><label><input type="checkbox">产品</label></div></li>
+									<li><div class="checkbox"><label><input type="checkbox">产品</label></div></li>
+									-->
+									</ul>
+								</div>
+								<div class="btn-block">
+									<button class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-chevron-right"></span></button>
+									<button class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-chevron-left"></span></button>
+								</div>
+								<div class="display">
+									<h2>显示</h2>
+									<ul>
+										<li><div class="checkbox"><label><input type="checkbox">客户</label></div></li>
+										<li><div class="checkbox"><label><input type="checkbox">市场</label></div></li>
+										<li><div class="checkbox"><label><input type="checkbox">销售</label></div></li>
+										<li><div class="checkbox"><label><input type="checkbox">活动任务</label></div></li>
+										<li><div class="checkbox"><label><input type="checkbox">合作伙伴</label></div></li>
+										<li><div class="checkbox"><label><input type="checkbox">教务</label></div></li>
+										<li><div class="checkbox"><label><input type="checkbox">产品服务</label></div></li>
+										<li><div class="checkbox"><label><input type="checkbox">人事</label></div></li>
+										<li><div class="checkbox"><label><input type="checkbox">分析</label></div></li>
+										<li><div class="checkbox"><label><input type="checkbox">系统</label></div></li>
+									
+									</ul>
+								</div>
+								<button class="btn btn-success btn-sm" >保存</button>
+							</form>
+						</div>
+					</div>
+					<script>
+						$(document).ready(function(){
+							$("#menu-nav-btn, #menu-nav-close").click(function(){
+							$("#menu-nav").fadeToggle(100);
+							});
+						});
+					</script>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<div id="main">
+
+
+		<div class="content">
+
+		<div class="alert alert-success" role="alert">信息提醒文本样式<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+		<div class="alert alert-info" role="alert">信息提醒文本样式</div>
+		<div class="alert alert-warning" role="alert">信息提醒文本样式</div>
+		<div class="alert alert-danger" role="alert">信息提醒文本样式</div>
+
+
+			<div class="mobule">
+				<div class="title">
+					<h1>仪表盘</h1>
+				</div>
+				<div class="mobule-con">
+					<img src="../img/temp.jpg" />
+				</div>
+			</div>
+
+			<div class="mobule-division"></div>
+			<div class="mobule">
+				<div class="title">
+					<h1>我的任务</h1>
+					<div class="function">
+						<a class="btn btn-success btn-sm" href="">添加</a>
+					</div>
+					<div class="tool">
+						<a id="set-01"><span class="glyphicon glyphicon-cog text-18" aria-hidden="true"></span></a>
+						<!-- 设置我的任务 -->
+						<div id="set-window-01" class="tool-window">
+							<div class="tool-window-con">
+								<h1>设置</h1>
+								<a id="set-window-01-close" class="close"><span class="glyphicon glyphicon-remove-circle"></span></a>
+								<form>
+									<div class="all">
+										<h2>所有</h2>
+										<ul>
+										
+										</ul>
+									</div>
+									<div class="btn-block">
+										<button class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-chevron-right"></span></button>
+										<button class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-chevron-left"></span></button>
+									</div>
+									<div class="display">
+										<h2>显示</h2>
+										<ul>
+											<li><div class="checkbox"><label><input type="checkbox">完成</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">主题</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">名称</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">客户</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">日期</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">状态</label></div></li>
+										</ul>
+									</div>
+									<button class="btn btn-success btn-sm" >保存</button>
+								</form>
+							</div>
+						</div>
+						<script>
+							$(document).ready(function(){
+								$("#set-01, #set-window-01-close").click(function(){
+								$("#set-window-01").fadeToggle(100);
+								});
+							});
+						</script>
+						<!-- 设置我的任务 -->
+					
+					</div>
+				</div>
+				<div class="tablt-list">
+					<table class="table">
+						<tr>
+							<th>完成</th>
+							<th>主题</th>
+							<th>名称</th>
+							<th>客户</th>
+							<th>日期</th>
+							<th>状态</th>
+						</tr>
+						<tr>
+							<td><span class="text-red">未完成</span></td>
+							<td><a class="a-lg text-blue" href="">有效关键绩效指标-设计关键绩效指标-业务分析（24）</a></td>
+							<td><a href="">业务分析</a></td>
+							<td><a href="">上海诺淳</a></td>
+							<td>2015-8-18  16:26</td>
+							<td><a href="">有效</a></td>
+						</tr>
+						<tr>
+							<td><span class="text-blue">未完成</span></td>
+							<td><a class="a-lg text-blue" href="">有效关键绩效指标-设计关键绩效指标-业务分析（24）</a></td>
+							<td><a href="">业务分析</a></td>
+							<td><a href="">上海诺淳</a></td>
+							<td>2015-8-18  16:26</td>
+							<td><a href="">有效</a></td>
+						</tr>
+
+						<tr>
+							<td><span class="text-green">未完成</span></td>
+							<td><a class="a-lg text-blue" href="">有效关键绩效指标-设计关键绩效指标-业务分析（24）</a></td>
+							<td><a href="">业务分析</a></td>
+							<td><a href="">上海诺淳</a></td>
+							<td>2015-8-18  16:26</td>
+							<td><a href="">有效</a></td>
+						</tr>
+						<tr>
+							<td><span class="text-gray">未完成</span></td>
+							<td><a class="a-lg text-blue" href="">有效关键绩效指标-设计关键绩效指标-业务分析（24）</a></td>
+							<td><a href="">业务分析</a></td>
+							<td><a href="">上海诺淳</a></td>
+							<td>2015-8-18  16:26</td>
+							<td><a href="">有效</a></td>
+						</tr>												
+					</table>	
+				</div>
+			</div>
+			<div class="mobule-division"></div>
+			<div class="mobule">
+				<div class="title">
+					<h1>公司新闻</h1>
+				</div>
+				<div class="tablt-list">
+					<table class="table">
+						<tr>
+							<th>主题</th>
+							<th>日期</th>
+						</tr>
+
+						<tr>
+							<td><a class="a-lg text-blue" href="">有效关键绩效指标-设计关键绩效指标-业务分析（24）</a></td>
+							<td>2015-8-18  16:26</td>
+						</tr>
+
+						<tr>
+							<td><a class="a-lg text-blue" href="">有效关键绩效指标-设计关键绩效指标-业务分析（24）</a></td>
+							<td>2015-8-18  16:26</td>
+						</tr>
+						<tr>
+							<td><a class="a-lg text-blue" href="">有效关键绩效指标-设计关键绩效指标-业务分析（24）</a></td>
+							<td>2015-8-18  16:26</td>
+						</tr>
+						<tr>
+							<td><a class="a-lg text-blue" href="">有效关键绩效指标-设计关键绩效指标-业务分析（24）</a></td>
+							<td>2015-8-18  16:26</td>
+						</tr>
+
+					</table>	
+				</div>
+			</div>
+
+
+		</div>
+
+		<div class="side">
+			<ul>
+				<li><a href=""><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></a></li>
+				<li><a id="side-nav-btn"><span class="glyphicon glyphicon glyphicon-list" aria-hidden="true"></span></a>
+					<ul id="side-nav" class="side-nav">
+						<li><a href="">分析</a></li>
+						<li><a href="">系统</a></li>
+						<li><a href=""><span class="glyphicon glyphicon-plus"></span>添加快捷菜单</a></li>				
+					</ul>
+					<script>
+						$(document).ready(function(){
+							$("#side-nav-btn").click(function(){
+							$("#side-nav").fadeToggle(100);
+							});
+						});
+					</script>
+				</li>
+				<li><a href=""><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<div id="footer">
+		<p>Copyright © 2015 捷泰克国际有限公司</p>
+	</div>
+</div>
+</body>
+</html>

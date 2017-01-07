@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+
+#main .curriculum-list{
+	max-height: 500px;
+	width: 100%;
+	margin-top: 10px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+}
+#main .personnel{
+	height: 100%;
+	width: 260px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-right: 2px solid #ccc;
+	overflow: auto;
+	padding-top: 40px;
+}
+
+#main .date{
+	margin-left: 262px;
+	height: 100%;
+	overflow:auto;	
+	padding: 0 1px 0 0;
+}
+#main .date-block{
+	display: inline-table;
+	margin-left: 2px;
+}
+
+#main .date-block h4{
+	line-height: 30px;
+	font-size: 12px;
+	font-weight: bold;;
+	height: 40px;
+}
+
+#main .table-date{
+	border-left: 1px solid #ccc;
+	overflow: hidden;
+}
+#main .table-date td,#main .table-date th{
+	border-right: 1px solid #ccc;
+	padding: 8px;
+}
+#main .table-date th{
+	background: #f1f1f1;
+}

@@ -1,0 +1,2041 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>SAP</title>
+	<meta name="Keywords" content="" /> 
+	<meta name="Description" content="" />   
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Robots" content="all" /> 
+	<meta name="Copyright" content="" />
+	<meta name="author" content="">
+	<meta name="Build" content="2015.1.8" /> 
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/WdatePicker.js"></script>
+	<link rel="stylesheet" href="../css/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" href="../css/master.css" type="text/css">
+</head>
+<body>
+<div id="top">
+	<ul>
+		<li><a href="">蓝熊</a></li>
+		<li><a href="">个性化设置</a></li>
+		<li><a href="">学习中心</a></li>
+		<li><a href="">帮助</a></li>
+		<li><a href="">退出</a></li>
+	</ul>
+	<div class="notify"><a href=""><span class="glyphicon glyphicon-bell" aria-hidden="true"></span><i>6</i></a></div>
+</div>
+<div id="inside">
+	<div id="header">
+		<div class="menu">
+			<ul>
+				<li ><a href="default.html">首页</a></li>
+				<li ><a href="customer.html">客户</a></li>
+				<li class="current "><a href="marketing.html">市场</a></li>
+				<li ><a href="sales leads.html">销售</a></li>
+				<li><a href="activity.html">活动任务</a></li>
+				<li><a href="partner.html">合作伙伴</a></li>
+				<li><a href="education.html">教务</a></li>
+				<li><a href="product.html">产品服务</a></li>
+				<li><a href="human resource.html">人事</a></li>
+				<li><a href="analysis.html">分析</a></li>
+				<li><a href="system.html">系统</a></li>
+				<li><a id="menu-nav-btn"><span class="glyphicon glyphicon-list" aria-hidden="true"></span></a>
+					<div id="menu-nav" class="menu-nav">
+						<div class="menu-nav-con">
+							<h1>菜单定制</h1>
+							<a id="menu-nav-close" class="close"><span class="glyphicon glyphicon-remove-circle"></span></a>
+							<form>
+								<div class="all">
+									<h2>所有</h2>
+									<ul>
+									<!--
+									<li><div class="checkbox"><label><input type="checkbox">产品</label></div></li>
+									<li><div class="checkbox"><label><input type="checkbox">产品</label></div></li>
+									-->
+									</ul>
+								</div>
+								<div class="btn-block">
+									<button class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-chevron-right"></span></button>
+									<button class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-chevron-left"></span></button>
+								</div>
+								<div class="display">
+									<h2>显示</h2>
+									<ul>
+										<li><div class="checkbox"><label><input type="checkbox">客户</label></div></li>
+										<li><div class="checkbox"><label><input type="checkbox">市场</label></div></li>
+										<li><div class="checkbox"><label><input type="checkbox">销售</label></div></li>
+										<li><div class="checkbox"><label><input type="checkbox">活动任务</label></div></li>
+										<li><div class="checkbox"><label><input type="checkbox">合作伙伴</label></div></li>
+										<li><div class="checkbox"><label><input type="checkbox">教务</label></div></li>
+										<li><div class="checkbox"><label><input type="checkbox">产品服务</label></div></li>
+										<li><div class="checkbox"><label><input type="checkbox">人事</label></div></li>
+										<li><div class="checkbox"><label><input type="checkbox">分析</label></div></li>
+										<li><div class="checkbox"><label><input type="checkbox">系统</label></div></li>
+									</ul>
+								</div>
+								<button class="btn btn-success btn-sm" >保存</button>
+							</form>
+						</div>
+					</div>
+					<script>
+						$(document).ready(function(){
+							$("#menu-nav-btn, #menu-nav-close").click(function(){
+							$("#menu-nav").fadeToggle(100);
+							});
+						});
+					</script>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="main">
+		<div class="content">
+			<div class="mobule">
+				<div class="title">
+					<h1>老客户推广活动</h1>
+				</div>
+				<div class="info">
+					<div class="info-remind">
+                                                <a id="top-window-03">机会：（6）</a>
+                                                <a id="top-window-03">推广活动成员：（6）</a>
+						<a id="top-window-03">未处理活动：（6）</a>
+						<a id="top-window-04">活动历史：（9）</a>
+						<a id="top-window-05">附件：（5）</a>
+						<a id="top-window-06">备注：（3）</a>
+					</div>
+				</div>
+				<!-- 机会快捷开窗 -->
+				<div id="top-window-01-info" class="window">
+					<div class="window-con">
+						<div class="mobule">
+							<a id="top-window-01-close" class="close"><span class="glyphicon glyphicon-remove-circle"></span></a>
+							<div class="title">
+								<h1>机会</h1>
+								<div class="function">
+									<a id="add-01" class="btn btn-success btn-sm">新建机会</a>
+								</div>
+							</div>
+							<div class="tablt-list">
+								<table class="table">
+									<tr>
+										<th class="col-xs-2">机会名称</th>
+										<th class="col-xs-2">类型</th>
+										<th class="col-xs-2">电子邮件</th>
+										<th class="col-xs-2">手机</th>
+										<th class="col-xs-1">操作</th>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">Kevin Bai</a></td>
+										<td>总经理</td>
+										<td>andy.liu@188.com</td>
+										<td>18888888888</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">Maggie Ji</a></td>
+										<td>总经理</td>
+										<td>andy.liu@188.com</td>
+										<td>18888888888</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">Echo Zhao</a></td>
+										<td>总经理</td>
+										<td>andy.liu@188.com</td>
+										<td>18888888888</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">Oliver Xue</a></td>
+										<td>总经理</td>
+										<td>andy.liu@188.com</td>
+										<td>18888888888</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script>
+					$(document).ready(function(){
+						$("#top-window-01, #top-window-01-close").click(function(){
+						$("#top-window-01-info").fadeToggle(100);
+						});
+					});
+				</script>			
+				<!-- 机会快捷开窗结束 -->
+				<!-- 推广活动成员快捷开窗 -->
+				<div id="top-window-02-info" class="window">
+					<div class="window-con">
+						<div class="mobule">
+							<a id="top-window-02-close" class="close"><span class="glyphicon glyphicon-remove-circle"></span></a>
+							<div class="title">
+								<h1>业务机会</h1>
+								<div class="function">
+									<a id="add-02" class="btn btn-success btn-sm">添加推广活动成员</a>
+								</div>
+							</div>
+							<div class="tablt-list">
+								<table class="table">
+									<tr>
+										<th class="col-xs-2">成名名称</th>
+										<th class="col-xs-2">电话</th>
+										<th class="col-xs-2">邮件</th>
+										<th class="col-xs-2">结束日期</th>
+										<th class="col-xs-1">操作</th>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">某公司IT项目</a></td>
+										<td>C</td>
+										<td>800000</td>
+										<td>2015-12-12</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">某公司IT项目</a></td>
+										<td>C</td>
+										<td>800000</td>
+										<td>2015-12-12</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">某公司IT项目</a></td>
+										<td>C</td>
+										<td>800000</td>
+										<td>2015-12-12</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">某公司IT项目</a></td>
+										<td>C</td>
+										<td>800000</td>
+										<td>2015-12-12</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script>
+					$(document).ready(function(){
+						$("#top-window-02, #top-window-02-close").click(function(){
+						$("#top-window-02-info").fadeToggle(100);
+						});
+					});
+				</script>			
+				<!-- 机会快捷开窗结束 -->
+				<!-- 未处理活动快捷开窗 -->
+				<div id="top-window-03-info" class="window">
+					<div class="window-con">
+						<div class="mobule">
+							<a id="top-window-03-close" class="close"><span class="glyphicon glyphicon-remove-circle"></span></a>
+							<div class="title">
+								<h1>未处理活动</h1>
+								<div class="function">
+									<a id="add-03" class="btn btn-success btn-sm">新建活动</a>
+								</div>
+							</div>
+							<div class="tablt-list">
+								<table class="table">
+									<tr>
+										<th class="col-xs-1">主题</th>
+										<th class="col-xs-1">名称</th>
+										<th class="col-xs-1">类型</th>
+										<th class="col-xs-1">到期日期</th>
+										<th class="col-xs-1">状态</th>
+										<th class="col-xs-1">优先级</th>
+										<th class="col-xs-1">责任人</th>
+										<th class="col-xs-1">操作</th>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">新品发布推广</a></td>
+										<td>推广</td>
+										<td>电话</td>
+										<td>2015-11-11</td>
+										<td>未处理</td>
+										<td>中</td>
+										<td>刘玉</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">新品发布推广</a></td>
+										<td>推广</td>
+										<td>电话</td>
+										<td>2015-11-11</td>
+										<td>未处理</td>
+										<td>中</td>
+										<td>刘玉</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">新品发布推广</a></td>
+										<td>推广</td>
+										<td>电话</td>
+										<td>2015-11-11</td>
+										<td>未处理</td>
+										<td>中</td>
+										<td>刘玉</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">新品发布推广</a></td>
+										<td>推广</td>
+										<td>电话</td>
+										<td>2015-11-11</td>
+										<td>未处理</td>
+										<td>中</td>
+										<td>刘玉</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script>
+					$(document).ready(function(){
+						$("#top-window-03, #top-window-03-close").click(function(){
+						$("#top-window-03-info").fadeToggle(100);
+						});
+					});
+				</script>			
+				<!-- 未处理活动快捷开窗结束 -->
+				<!-- 活动历史快捷开窗 -->
+				<div id="top-window-04-info" class="window">
+					<div class="window-con">
+						<div class="mobule">
+							<a id="top-window-04-close" class="close"><span class="glyphicon glyphicon-remove-circle"></span></a>
+							<div class="title">
+								<h1>活动历史</h1>
+								<div class="function">
+									<a id="add-03" class="btn btn-success btn-sm">新建活动</a>
+								</div>
+							</div>
+							<div class="tablt-list">
+								<table class="table">
+									<tr>
+										<th class="col-xs-1">主题</th>
+										<th class="col-xs-1">名称</th>
+										<th class="col-xs-1">类型</th>
+										<th class="col-xs-1">到期日期</th>
+										<th class="col-xs-1">状态</th>
+										<th class="col-xs-1">优先级</th>
+										<th class="col-xs-1">责任人</th>
+										<th class="col-xs-1">操作</th>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">了解竞争对手报价及策略</a></td>
+										<td>会议</td>
+										<td>活动任务</td>
+										<td>2015-8-17</td>
+										<td>已完成</td>
+										<td>高</td>
+										<td>吴总</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">了解竞争对手报价及策略</a></td>
+										<td>会议</td>
+										<td>活动任务</td>
+										<td>2015-8-17</td>
+										<td>已完成</td>
+										<td>高</td>
+										<td>吴总</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">了解竞争对手报价及策略</a></td>
+										<td>会议</td>
+										<td>活动任务</td>
+										<td>2015-8-17</td>
+										<td>已完成</td>
+										<td>高</td>
+										<td>吴总</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">了解竞争对手报价及策略</a></td>
+										<td>会议</td>
+										<td>活动任务</td>
+										<td>2015-8-17</td>
+										<td>已完成</td>
+										<td>高</td>
+										<td>吴总</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script>
+					$(document).ready(function(){
+						$("#top-window-04, #top-window-04-close").click(function(){
+						$("#top-window-04-info").fadeToggle(100);
+						});
+					});
+				</script>			
+				<!-- 活动历史快捷开窗结束 -->
+				
+				<!-- 附件快捷开窗 -->
+				<div id="top-window-06-info" class="window">
+					<div class="window-con">
+						<div class="mobule">
+							<a id="top-window-06-close" class="close"><span class="glyphicon glyphicon-remove-circle"></span></a>
+							<div class="title">
+								<h1>附件</h1>
+								<div class="function">
+									<a id="addon-01" class="btn btn-success btn-sm" >添加附件</a>
+								</div>
+							</div>
+							<div class="tablt-list">
+								<table class="table">
+									<tr>
+										<th class="col-xs-2">附件名称</th>
+										<th class="col-xs-2">附件类型</th>
+										<th class="col-xs-2">创建时间</th>
+										<th class="col-xs-2">创建人</th>
+										<th class="col-xs-1">操作</th>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">合同扫描</a></td>
+										<td>图片</td>
+										<td>2015-9-9</td>
+										<td>张伟</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">合同扫描</a></td>
+										<td>图片</td>
+										<td>2015-9-9</td>
+										<td>张伟</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">合同扫描</a></td>
+										<td>图片</td>
+										<td>2015-9-9</td>
+										<td>张伟</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">合同扫描</a></td>
+										<td>图片</td>
+										<td>2015-9-9</td>
+										<td>张伟</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">合同扫描</a></td>
+										<td>图片</td>
+										<td>2015-9-9</td>
+										<td>张伟</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script>
+					$(document).ready(function(){
+						$("#top-window-06, #top-window-06-close").click(function(){
+						$("#top-window-06-info").fadeToggle(100);
+						});
+					});
+				</script>			
+				<!-- 附件快捷开窗结束 -->
+				<!-- 备注快捷开窗 -->
+				<div id="top-window-07-info" class="window">
+					<div class="window-con">
+						<div class="mobule">
+							<a id="top-window-07-close" class="close"><span class="glyphicon glyphicon-remove-circle"></span></a>
+							<div class="title">
+								<h1>备注</h1>
+								<div class="function">
+									<a id="add-07" class="btn btn-success btn-sm" >新建备注</a>
+								</div>
+							</div>
+							<div class="tablt-list">
+								<table class="table">
+									<tr>
+										<th class="col-xs-2">标题</th>
+										<th class="col-xs-2">类型</th>
+										<th class="col-xs-2">创建时间</th>
+										<th class="col-xs-2">创建人</th>
+										<th class="col-xs-1">操作</th>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">客户相关情况说明</a></td>
+										<td>常规</td>
+										<td>2015-9-5</td>
+										<td>王大鹏</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">客户相关情况说明</a></td>
+										<td>常规</td>
+										<td>2015-9-5</td>
+										<td>王大鹏</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>
+									<tr>
+										<td><a class="a-lg text-blue" href="">客户相关情况说明</a></td>
+										<td>常规</td>
+										<td>2015-9-5</td>
+										<td>王大鹏</td>
+										<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+									</tr>						
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script>
+					$(document).ready(function(){
+						$("#top-window-07, #top-window-07-close").click(function(){
+						$("#top-window-07-info").fadeToggle(100);
+						});
+					});
+				</script>			
+				<!-- 备注快捷开窗结束 -->
+			</div>
+			<div class="mobule">
+				<div class="title">
+					<h1>推广活动信息</h1>
+					<div class="function">
+						<button class="btn btn-success btn-sm" href="">保存</button><button class="btn btn-default btn-sm offset-40" href="">取消</button>
+						<button class="btn btn-success btn-sm" href="">编辑</button><button class="btn btn-red btn-sm offset-40" href="">删除</button>
+                                                <button class="btn btn-success btn-sm" href="">移交</button>
+					</div>					
+					<div class="tool">
+						<a href=""><span class="glyphicon glyphicon-cog text-18" aria-hidden="true"></span></a>
+					</div>						
+				</div>
+				<div class="form-block bg-gray row">
+					<div class="form-add col-xs-10 col-xs-offset-1">
+						<form class="form-group">
+						<div class="form-group col-xs-6">
+							<div class="col-xs-100">	
+								<label >推广活动编号：</label>
+												</div>
+												<div class="col-xs-8">
+													<input type="text" class="form-control" placeholder="">	
+												</div>							
+											</div>
+
+											<div class="form-group col-xs-6">
+												<div class="col-xs-100">
+													<label >推广活动名称：</label>
+												</div>
+												<div class="col-xs-8">
+													<input type="text" class="form-control" placeholder="">	
+												</div>							
+											</div>	
+                                                                                        
+											<div class="form-group col-xs-6">
+												<div class="col-xs-100">
+													<label >推广活动描述：</label>
+												</div>
+												<div class="col-xs-8">
+													<input type="text" class="form-control" placeholder="">	
+												</div>							
+											</div>						
+											<div class="form-group col-xs-6">
+												<div class="col-xs-100">
+													<label >上级活动：</label>
+												</div>
+												<div class="col-xs-8">
+												<select class="form-control">
+													<option>进行中</option>
+													<option>赢得</option>
+													<option>失去</option>
+													<option>停止</option>
+                                                                                                        <option>采购</option>
+												</select>
+												</div>							
+											</div>
+
+										<div class="form-group col-xs-6">
+											<div class="col-xs-100">
+												<label >类型：</label>
+											</div>
+											<div class="col-xs-8">
+												<select class="form-control">
+													<option>低可能性</option>
+													<option>一般可能性</option>
+													<option>高可能性</option>
+													
+												</select>
+											</div>							
+										</div>	
+
+                                                                                <div class="form-group col-xs-6">
+											<div class="col-xs-100">
+												<label >创建者：</label>
+											</div>
+											<div class="col-xs-8">
+												<input type="text" class="form-control" placeholder="">	
+											</div>							
+										</div>
+
+                                                                                <div class="form-group col-xs-6">
+											<div class="col-xs-100">
+												<label >预算收入：</label>
+											</div>
+											<div class="col-xs-8">
+												<input type="text" class="form-control" placeholder="">	
+											</div>							
+										</div>
+
+										<div class="form-group col-xs-6">
+											<div class="col-xs-100">
+												<label >预算成本：</label>
+											</div>
+											<div class="col-xs-8">
+												<input type="text" class="form-control" placeholder="">	
+											</div>							
+										</div>
+
+										<div class="form-group col-xs-6">
+											<div class="col-xs-100">
+												<label >实际成本：</label>
+											</div>
+											<div class="col-xs-8">
+												<input type="text" class="form-control" placeholder="">	
+											</div>							
+										</div>			
+										
+									<!--销售组织设定-->	
+										<div class="form-group col-xs-6">
+											<div class="col-xs-100">
+												<label >销售组织：</label>
+											</div>
+											<div class="col-xs-8">
+												<input type="text" class="form-control form-search-01" placeholder="">	
+												<div class="form-list form-list-01">
+													<ul>
+														<li>销售部</li>
+														<li>项目销售部</li>
+													</ul>
+												</div>
+												<script>
+													$(document).ready(function(){
+														$(".form-search-01").click(function(){
+															$(".form-list-01").fadeToggle(100);
+														});
+													});
+												</script>
+												<a id="search-01" class="search-icon"></a>
+												<!-- 搜索 -->
+												<div id="search-window-01" class="window">
+													<div class="window-con">
+														<div class="mobule">
+															<a id="search-window-01-close" class="close"><span class="glyphicon glyphicon-remove-circle"></span></a>
+															<div class="title">
+																<h1>搜索销售组织</h1>
+															</div>
+															<div class="info" style="margin-bottom:0px">
+																<div class="form-inline">
+																	<form>											
+																		<div class="form-group">
+																			<input type="text" class="form-control" placeholder="">
+																			<button type="submit" class="btn btn-success">搜索</button>
+																		</div>	
+																	</form>
+																	<a class="btn btn-primary senior s1-down offset-40">高级搜索</a>
+																	<a class="btn btn-primary ordinary s1-up offset-40">普通搜索</a>
+
+																</div>
+																<script type="text/javascript"> 
+																	$(document).ready(function(){
+																		$(".s1-down").click(function(){
+																			$(".s1").slideDown("fast");
+																		});
+
+																		$(".s1-up").click(function(){
+																			$(".s1").slideUp("fast");
+																		});
+
+																		$(".s1-down").click(function(){
+																			$(".s1-down").hide();										
+																		});
+																		$(".s1-down").click(function(){
+																			$(".s1-up").show();
+																		});
+
+																		$(".s1-up").click(function(){
+																			$(".s1-up").hide();
+																		});
+																		$(".s1-up").click(function(){
+																			$(".s1-down").show();
+																		});
+
+																	});
+																</script>
+
+
+																<div class="form-block senior-con s1 row" >
+																	<div class="form-add col-xs-11 col-xs-offset-1">
+																		<form class="form-group">
+																			<div class="form-group col-xs-6">
+																				<div class="col-xs-100">
+																					<label >销售组织编号：</label>
+																				</div>
+																				<div class="col-xs-8">
+																					<input type="text" class="form-control" placeholder="">	
+																				</div>							
+																			</div>
+
+																			<div class="form-group col-xs-6">
+																				<div class="col-xs-100">
+																					<label >负责经理：</label>
+																				</div>
+																				<div class="col-xs-8">
+																					<input type="text" class="form-control" placeholder="">	
+																				</div>							
+																			</div>						
+																			<div class="form-group col-xs-6">
+																				<div class="col-xs-100">
+																					<label >销售组织名称：</label>
+																				</div>
+																				<div class="col-xs-8">
+																					<input type="text" class="form-control" placeholder="">	
+																				</div>							
+																			</div>
+																			<div class="form-group col-xs-6">
+																				<div class="col-xs-100">
+																					<label >开始日期：</label>
+																				</div>
+																				<div class="col-xs-8">
+																					<input type="text" class="form-control date" onFocus="WdatePicker({lang:'zh-cn'})" placeholder="选择日期">
+																				</div>							
+																			</div>	
+			
+																			<div class="form-group">
+																				<div class="offset-xs-100">
+																					<button type="submit" class="btn btn-success">搜索</button>
+																					<!--button type="submit" class="btn btn-success">重置</button>
+																					<button type="submit" class="btn btn-default">保存查询</button-->
+																				</div>
+																			</div>
+
+																		</form>
+																	</div>
+																</div>
+															</div>
+
+															<div class="tablt-list">
+																<table class="table">
+																	<tr>
+																		<th class="col-xs-2">销售组织编号</th>
+																		<th class="col-xs-2">销售组织名称</th>
+																		<th class="col-xs-2">销售组织有效期自</th>
+																		<th class="col-xs-2">销售组织有效期至</th>
+																		<th class="col-xs-1">操作</th>
+																	</tr>
+																	<tr>
+																		<td><a class="a-lg text-blue" href="">G0001</a></td>
+																		<td>销售部</td>
+																		<td>2015-9-9</td>
+																		<td>无限制</td>
+																		<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+																	</tr>
+																	<tr>
+																		<td><a class="a-lg text-blue" href="">G0001</a></td>
+																		<td>销售部</td>
+																		<td>2015-9-9</td>
+																		<td>无限制</td>
+																		<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+																	</tr>
+																	<tr>
+																		<td><a class="a-lg text-blue" href="">G0001</a></td>
+																		<td>销售部</td>
+																		<td>2015-9-9</td>
+																		<td>无限制</td>
+																		<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+																	</tr>
+																	<tr>
+																		<td><a class="a-lg text-blue" href="">G0001</a></td>
+																		<td>销售部</td>
+																		<td>2015-9-9</td>
+																		<td>无限制</td>
+																		<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+																	</tr>
+
+
+																</table>
+															</div>
+
+														</div>
+													</div>
+												</div>
+												<script>
+													$(document).ready(function(){
+														$("#search-01, #search-window-01-close").click(function(){
+															$("#search-window-01").fadeToggle(100);
+														});
+													});
+												</script>			
+											</div>							
+										</div>
+								<!--销售组织设定结束-->
+
+										<div class="form-group col-xs-6">
+											<div class="col-xs-100">
+												<label >开始时间：</label>
+											</div>
+											<div class="col-xs-8">
+												<input type="text"class="form-control date" onFocus="WdatePicker({lang:'zh-cn'})" placeholder="选择日期">
+											</div>							
+										</div>	
+
+										<div class="form-group col-xs-6">
+											<div class="col-xs-100">
+												<label >结束时间：</label>
+											</div>
+											<div class="col-xs-8">
+												<input type="text" class="form-control date" onFocus="WdatePicker({lang:'zh-cn'})" placeholder="选择日期">	
+											</div>							
+										</div>
+
+                                                                               <div class="form-group col-xs-6">
+											<div class="col-xs-100">
+												<label >目标组：</label>
+											</div>
+											<div class="col-xs-8">
+												<input type="text" class="form-control form-search-01" placeholder=""})" placeholder="选择日期">	
+											</div>							
+										</div>
+
+
+							
+						<div class="form-group">
+							<div class="offset-sm-100">
+								<!--button type="submit" class="btn btn-success">保存</button> <button type="submit" class="btn btn-success ">保存并新建</button-->
+							</div>
+						</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- 系统信息数据块 -->
+			<div class="mobule">
+				<div class="title">
+					<h1>系统信息</h1>	
+					<div class="tool">
+						<a id=""><span class="glyphicon glyphicon-unchecked detail-down-08 text-18 " aria-hidden="true" style="display:none"></span></a>
+						<a id=""><span class="glyphicon glyphicon-minus detail-up-08 text-18  " aria-hidden="true"></span></a>
+						<a id="set-08"><span class="glyphicon glyphicon-cog text-18" aria-hidden="true"></span></a>
+						<script type="text/javascript"> 
+							$(document).ready(function(){
+							  $(".detail-down-08").click(function(){
+								$(".detail-08").slideDown("fast");
+							  });
+							  $(".detail-up-08").click(function(){
+								$(".detail-08").slideUp("fast");
+							  });
+							  $(".detail-up-08").click(function(){
+								$(".detail-up-08").hide();										
+							  });
+							  $(".detail-up-08").click(function(){
+								$(".detail-down-08").show();
+							  });
+							  $(".detail-down-08").click(function(){
+								$(".detail-down-08").hide();
+							  });
+							  $(".detail-down-08").click(function(){
+								$(".detail-up-08").show();
+							  });
+							});
+						</script>	
+						<!-- 设置联系人字段显示 -->
+						<div id="set-window-08" class="tool-window">
+							<div class="tool-window-con">
+								<h1>设置</h1>
+								<a id="set-window-08-close" class="close"><span class="glyphicon glyphicon-remove-circle"></span></a>
+								<form>
+									<div class="all">
+										<h2>所有</h2>
+										<ul>
+											<!-- <li><div class="checkbox"><label><input type="checkbox">产品</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">单价</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">数量</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">日期</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">操作</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">产品</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">单价</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">数量</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">日期</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">操作</label></div></li> -->
+										</ul>
+									</div>
+									<div class="btn-block">
+										<button class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-chevron-right"></span></button>
+										<button class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-chevron-left"></span></button>
+									</div>
+									<div class="display">
+										<h2>显示</h2>
+										<ul>
+											<li><div class="checkbox"><label><input type="checkbox">创建人</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">创建时间</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">上次修改人</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">修改时间</label></div></li>
+										</ul>
+									</div>
+									<button class="btn btn-success btn-sm" >保存</button>
+								</form>
+							</div>
+						</div>
+						<script>
+							$(document).ready(function(){
+								$("#set-08, #set-window-08-close").click(function(){
+								$("#set-window-08").fadeToggle(100);
+								});
+							});
+						</script>
+						<!-- 设置联系人字段显示结束 -->
+					</div>
+				</div>
+				<div class="detail-08">
+					<!--div class="tablt-list"-->
+					<table class="table">
+						<tr>
+							<th class="col-xs-2">创建人</th>
+							<th class="col-xs-2">创建时间</th>					
+							<th class="col-xs-2">上次修改人</th>
+							<th class="col-xs-1">修改时间</th>
+						</tr>
+						<tr>
+							<td>赵信</td>
+							<td>2015-7-29 15:42:26</td>
+							<td>冯子敏</td>
+							<td>2015-8-16 10:38:12</td>
+						</tr>
+						<tr>
+							<td>赵信</td>
+							<td>2015-7-29 15:42:26</td>
+							<td>冯子敏</td>
+							<td>2015-8-16 10:38:12</td></tr>
+						<tr>
+							<td>赵信</td>
+							<td>2015-7-29 15:42:26</td>
+							<td>冯子敏</td>
+							<td>2015-8-16 10:38:12</td></tr>						
+					</table>
+					<!--/div-->
+				</div>				
+			</div>
+			<div class="mobule-division"></div>
+			<!-- 推广活动成员信息数据块 -->
+			<div class="mobule">
+				<div class="title">
+					<h1>成员信息</h1>
+					<div class="function">
+						<a class="btn btn-success btn-sm" href="">添加成员</a><a class="btn btn-success btn-sm" href="">编辑全部</a>
+					</div>
+					<div class="tool">
+						<a id=""><span class="glyphicon glyphicon-unchecked detail-down-09 text-18 " aria-hidden="true" style="display:none"></span></a>
+						<a id=""><span class="glyphicon glyphicon-minus detail-up-09 text-18  " aria-hidden="true"></span></a>
+						<a id="set-09"><span class="glyphicon glyphicon-cog text-18" aria-hidden="true"></span></a>
+						<script type="text/javascript"> 
+							$(document).ready(function(){
+							  $(".detail-down-09").click(function(){
+								$(".detail-09").slideDown("fast");
+							  });
+							  $(".detail-up-09").click(function(){
+								$(".detail-09").slideUp("fast");
+							  });
+							  $(".detail-up-09").click(function(){
+								$(".detail-up-09").hide();										
+							  });
+							  $(".detail-up-09").click(function(){
+								$(".detail-down-09").show();
+							  });
+							  $(".detail-down-09").click(function(){
+								$(".detail-down-09").hide();
+							  });
+							  $(".detail-down-09").click(function(){
+								$(".detail-up-09").show();
+							  });
+							});
+						</script>	
+						<!-- 设置联系人字段显示 -->
+						<div id="set-window-09" class="tool-window">
+							<div class="tool-window-con">
+								<h1>设置</h1>
+								<a id="set-window-09-close" class="close"><span class="glyphicon glyphicon-remove-circle"></span></a>
+								<form>
+									<div class="all">
+										<h2>所有</h2>
+										<ul>
+											<!-- <li><div class="checkbox"><label><input type="checkbox">产品</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">单价</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">数量</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">日期</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">操作</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">产品</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">单价</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">数量</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">日期</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">操作</label></div></li> -->
+										</ul>
+									</div>
+									<div class="btn-block">
+										<button class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-chevron-right"></span></button>
+										<button class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-chevron-left"></span></button>
+									</div>
+									<div class="display">
+										<h2>显示</h2>
+										<ul>
+											<li><div class="checkbox"><label><input type="checkbox">地址类型</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">国家/地区</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">城市</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">地址</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">邮编</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">操作</label></div></li>
+										</ul>
+									</div>
+									<button class="btn btn-success btn-sm" >保存</button>
+								</form>
+							</div>
+						</div>
+						<script>
+							$(document).ready(function(){
+								$("#set-09, #set-window-09-close").click(function(){
+								$("#set-window-09").fadeToggle(100);
+								});
+							});
+						</script>
+						<!-- 设置联系人字段显示结束 -->
+					</div>
+				</div>
+				<div class="detail-09">
+					<!--div class="tablt-list"-->
+					<table class="table">
+						<tr>
+							<th class="col-xs-2">成员名称</th>
+							<th class="col-xs-2">手机</th>
+							<th class="col-xs-2">城市</th>
+							<th class="col-xs-2">地址</th>
+							<th class="col-xs-2">邮编</th>
+							<th class="col-xs-1">操作</th>
+						</tr>
+						<tr>
+							<td>白雪</td>
+							<td>1223333333</td>
+							<td>上海</td>
+							<td>上海市浦东南路2250号b座B212-216</td>
+							<td>200120</td>
+							<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+						</tr>
+						<tr>
+							<td>Kevin Bai</td>
+							<td>123331233312</td>
+							<td>上海</td>
+							<td>上海市浦东南路2250号b座B212-216</td>
+							<td>200120</td>
+							<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+						</tr>
+						<tr>
+							<td>张丽</td>
+							<td>122221222212</td>
+							<td>上海</td>
+							<td>上海市浦东南路2250号b座B212-216</td>
+							<td>200120</td>
+							<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+						</tr>						
+					</table>
+					<!--/div-->
+				</div>				
+			</div>
+			<div class="mobule-division"></div>
+			
+			<!-- 未处理活动数据块 -->
+			<div class="mobule">
+				<div class="title">
+					<h1>未处理活动</h1>
+					<div class="function">
+						<a id="add-03" class="btn btn-success btn-sm">新建活动</a><a class="btn btn-success btn-sm" href="">编辑全部</a>
+					</div>
+					<!-- 新建活动 -->
+					<div id="add-window-03" class="window">
+						<div class="window-con"><!-- style="overflow:auto;height:200px"-->
+							<div class="mobule">
+								<a id="add-window-03-close" class="close"><span class="glyphicon glyphicon-remove-circle"></span></a>
+								<div class="title">
+									<h1>新建活动</h1>
+									<div class="function">
+										<button class="btn btn-success btn-sm" >保存</button><button class="btn btn-success btn-sm" >保存并新建</button>
+									</div>
+								</div>
+								<div class="form-block row">
+									<div class="form-add col-xs-10 col-xs-offset-1">
+										<form class="form-group">
+										<div class="form-group col-xs-6">
+											<div class="col-xs-100">
+												<label >主题：</label>
+											</div>
+											<div class="col-xs-8">
+												<input type="text" class="form-control" placeholder="">	
+											</div>							
+										</div>
+										<div class="form-group col-xs-6">
+											<div class="col-xs-100">
+												<label >名称：</label>
+											</div>
+											<div class="col-xs-8">
+												<input type="text" class="form-control" placeholder="">	
+											</div>							
+										</div>
+										<div class="form-group col-xs-6">
+											<div class="col-xs-100">
+												<label >类型：</label>
+											</div>
+											<div class="col-xs-8">
+												<select class="form-control">
+													<option>选择</option>
+													<option>电话</option>
+													<option>邮件</option>
+													<option>研讨会</option>
+												</select>
+											</div>							
+										</div>
+										<div class="form-group col-xs-6">
+											<div class="col-xs-100">
+												<label >到期日期：</label>
+											</div>
+											<div class="col-xs-8">
+												<input type="text" class="form-control date" onFocus="WdatePicker({lang:'zh-cn'})" placeholder="选择日期">
+											</div>							
+										</div>
+										<div class="form-group col-xs-6">
+											<div class="col-xs-100">
+												<label >状态：</label>
+											</div>
+											<div class="col-xs-8">
+												<select class="form-control">
+													<option>选择</option>
+													<option>未开始</option>
+													<option>进行中</option>
+													<option>已完成</option>
+												</select>
+											</div>							
+										</div>
+										<div class="form-group col-xs-6">
+											<div class="col-xs-100">
+												<label >优先级：</label>
+											</div>
+											<div class="col-xs-8">
+												<select class="form-control">
+													<option>选择</option>
+													<option>A</option>
+													<option>B</option>
+													<option>C</option>
+												</select>
+											</div>							
+										</div>
+										<div class="form-group col-xs-6">
+											<div class="col-xs-100">
+												<label >责任人：</label>
+											</div>
+											<div class="col-xs-8">
+												<input type="text" class="form-control" placeholder="">	
+											</div>							
+										</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<script>
+						$(document).ready(function(){
+							$("#add-03, #add-window-03-close").click(function(){
+								$("#add-window-03").fadeToggle(100);
+							});
+						});
+					</script>			
+					<!-- 新建活动结束 -->
+					<div class="tool">
+						<a id=""><span class="glyphicon glyphicon-unchecked detail-down-03 text-18 " aria-hidden="true" style="display:none"></span></a>
+						<a id=""><span class="glyphicon glyphicon-minus detail-up-03 text-18  " aria-hidden="true"></span></a>
+						<a id="set-03"><span class="glyphicon glyphicon-cog text-18" aria-hidden="true"></span></a>
+						<script type="text/javascript"> 
+							$(document).ready(function(){
+							  $(".detail-down-03").click(function(){
+								$(".detail-03").slideDown("fast");
+							  });
+							  $(".detail-up-03").click(function(){
+								$(".detail-03").slideUp("fast");
+							  });
+							  $(".detail-up-03").click(function(){
+								$(".detail-up-03").hide();										
+							  });
+							  $(".detail-up-03").click(function(){
+								$(".detail-down-03").show();
+							  });
+							  $(".detail-down-03").click(function(){
+								$(".detail-down-03").hide();
+							  });
+							  $(".detail-down-03").click(function(){
+								$(".detail-up-03").show();
+							  });
+							});
+						</script>	
+						<!-- 设置未处理活动字段显示 -->
+						<div id="set-window-03" class="tool-window">
+							<div class="tool-window-con">
+								<h1>设置</h1>
+								<a id="set-window-03-close" class="close"><span class="glyphicon glyphicon-remove-circle"></span></a>
+								<form>
+									<div class="all">
+										<h2>所有</h2>
+										<ul>
+											<!-- <li><div class="checkbox"><label><input type="checkbox">产品</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">单价</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">数量</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">日期</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">操作</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">产品</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">单价</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">数量</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">日期</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">操作</label></div></li>
+										 --></ul>
+									</div>
+									<div class="btn-block">
+										<button class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-chevron-right"></span></button>
+										<button class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-chevron-left"></span></button>
+									</div>
+									<div class="display">
+										<h2>显示</h2>
+										<ul>
+											<li><div class="checkbox"><label><input type="checkbox">主题</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">名称</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">类型</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">到期日期</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">状态</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">优先级</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">责任人</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">操作</label></div></li>
+										</ul>
+									</div>
+									<button class="btn btn-success btn-sm" >保存</button>
+								</form>
+							</div>
+						</div>
+						<script>
+							$(document).ready(function(){
+								$("#set-03, #set-window-03-close").click(function(){
+								$("#set-window-03").fadeToggle(100);
+								});
+							});
+						</script>
+						<!-- 设置未处理活动字段显示结束 -->
+					</div>
+				</div>
+				<div class="detail-03">
+					<!--div class="tablt-list"-->
+					<table class="table">
+						<tr>
+							<th class="col-xs-1">主题</th>
+							<th class="col-xs-1">名称</th>
+							<th class="col-xs-1">类型</th>
+							<th class="col-xs-1">到期日期</th>
+							<th class="col-xs-1">状态</th>
+							<th class="col-xs-1">优先级</th>
+							<th class="col-xs-1">责任人</th>
+							<th class="col-xs-1">操作</th>
+						</tr>
+						<tr>
+							<td><a class="a-lg text-blue" href="">新品发布推广</a></td>
+							<td>推广</td>
+							<td>电话</td>
+							<td>2015-11-11</td>
+							<td>未处理</td>
+							<td>中</td>
+							<td>刘玉</td>
+							<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+						</tr>
+						<tr>
+							<td><a class="a-lg text-blue" href="">新品发布推广</a></td>
+							<td>推广</td>
+							<td>电话</td>
+							<td>2015-11-11</td>
+							<td>未处理</td>
+							<td>中</td>
+							<td>刘玉</td>
+							<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+						</tr>
+						<tr>
+							<td><a class="a-lg text-blue" href="">新品发布推广</a></td>
+							<td>推广</td>
+							<td>电话</td>
+							<td>2015-11-11</td>
+							<td>未处理</td>
+							<td>中</td>
+							<td>刘玉</td>
+							<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+						</tr>
+						<tr>
+							<td><a class="a-lg text-blue" href="">新品发布推广</a></td>
+							<td>推广</td>
+							<td>电话</td>
+							<td>2015-11-11</td>
+							<td>未处理</td>
+							<td>中</td>
+							<td>刘玉</td>
+							<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+						</tr>
+					</table>
+					<!--/div-->
+				</div>				
+			</div>
+			<div class="mobule-division"></div>
+			<!-- 活动历史数据块 -->
+			<div class="mobule">
+				<div class="title">
+					<h1>活动历史</h1>
+					<div class="function">
+						<a id="add-03" class="btn btn-success btn-sm">新建活动</a><a class="btn btn-success btn-sm" href="">编辑全部</a>
+					</div>
+					<div class="tool">
+						<a id=""><span class="glyphicon glyphicon-unchecked detail-down-04 text-18 " aria-hidden="true" style="display:none"></span></a>
+						<a id=""><span class="glyphicon glyphicon-minus detail-up-04 text-18  " aria-hidden="true"></span></a>
+						<a id="set-04"><span class="glyphicon glyphicon-cog text-18" aria-hidden="true"></span></a>
+						<script type="text/javascript"> 
+							$(document).ready(function(){
+							  $(".detail-down-04").click(function(){
+								$(".detail-04").slideDown("fast");
+							  });
+							  $(".detail-up-04").click(function(){
+								$(".detail-04").slideUp("fast");
+							  });
+							  $(".detail-up-04").click(function(){
+								$(".detail-up-04").hide();										
+							  });
+							  $(".detail-up-04").click(function(){
+								$(".detail-down-04").show();
+							  });
+							  $(".detail-down-04").click(function(){
+								$(".detail-down-04").hide();
+							  });
+							  $(".detail-down-04").click(function(){
+								$(".detail-up-04").show();
+							  });
+							});
+						</script>	
+						<!-- 设置活动历史字段显示 -->
+						<div id="set-window-04" class="tool-window">
+							<div class="tool-window-con">
+								<h1>设置</h1>
+								<a id="set-window-04-close" class="close"><span class="glyphicon glyphicon-remove-circle"></span></a>
+								<form>
+									<div class="all">
+										<h2>所有</h2>
+										<ul>
+											<!-- <li><div class="checkbox"><label><input type="checkbox">产品</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">单价</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">数量</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">日期</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">操作</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">产品</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">单价</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">数量</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">日期</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">操作</label></div></li> -->
+										</ul>
+									</div>
+									<div class="btn-block">
+										<button class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-chevron-right"></span></button>
+										<button class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-chevron-left"></span></button>
+									</div>
+									<div class="display">
+										<h2>显示</h2>
+										<ul>
+											<li><div class="checkbox"><label><input type="checkbox">主题</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">名称</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">类型</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">到期日期</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">状态</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">优先级</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">责任人</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">操作</label></div></li>
+										</ul>
+									</div>
+									<button class="btn btn-success btn-sm" >保存</button>
+								</form>
+							</div>
+						</div>
+						<script>
+							$(document).ready(function(){
+								$("#set-04, #set-window-04-close").click(function(){
+								$("#set-window-04").fadeToggle(100);
+								});
+							});
+						</script>
+						<!-- 设置活动历史字段显示结束 -->
+					</div>
+				</div>
+				<div class="detail-04">
+					<!--div class="tablt-list"-->
+					<table class="table">
+						<tr>
+							<th class="col-xs-1">主题</th>
+							<th class="col-xs-1">名称</th>
+							<th class="col-xs-1">类型</th>
+							<th class="col-xs-1">到期日期</th>
+							<th class="col-xs-1">状态</th>
+							<th class="col-xs-1">优先级</th>
+							<th class="col-xs-1">责任人</th>
+							<th class="col-xs-1">操作</th>
+						</tr>
+						<tr>
+							<td><a class="a-lg text-blue" href="">了解竞争对手报价及策略</a></td>
+							<td>会议</td>
+							<td>活动任务</td>
+							<td>2015-8-17</td>
+							<td>已完成</td>
+							<td>高</td>
+							<td>吴总</td>
+							<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+						</tr>
+						<tr>
+							<td><a class="a-lg text-blue" href="">了解竞争对手报价及策略</a></td>
+							<td>会议</td>
+							<td>活动任务</td>
+							<td>2015-8-17</td>
+							<td>已完成</td>
+							<td>高</td>
+							<td>吴总</td>
+							<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+						</tr>
+						<tr>
+							<td><a class="a-lg text-blue" href="">了解竞争对手报价及策略</a></td>
+							<td>会议</td>
+							<td>活动任务</td>
+							<td>2015-8-17</td>
+							<td>已完成</td>
+							<td>高</td>
+							<td>吴总</td>
+							<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+						</tr>
+						<tr>
+							<td><a class="a-lg text-blue" href="">了解竞争对手报价及策略</a></td>
+							<td>会议</td>
+							<td>活动任务</td>
+							<td>2015-8-17</td>
+							<td>已完成</td>
+							<td>高</td>
+							<td>吴总</td>
+							<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+						</tr>
+					</table>
+					<!--/div-->
+				</div>				
+			</div>
+			<div class="mobule-division"></div>
+			<!-- 机会数据块 -->
+			<div class="mobule">
+				<div class="title">
+					<h1>机会</h1>
+					<div class="function">
+						<a id="add-05" class="btn btn-success btn-sm">新建机会</a><a class="btn btn-success btn-sm" href="">编辑全部</a>
+					</div>
+					<!-- 新建机会 -->
+						<div id="add-window-05" class="window">
+							<div class="window-con"><!-- style="overflow:auto;height:200px"-->
+								<div class="mobule">
+									<a id="add-window-05-close" class="close"><span class="glyphicon glyphicon-remove-circle"></span></a>
+									<div class="title">
+										<h1>新建机会</h1>
+										<div class="function">
+											<button class="btn btn-success btn-sm" >保存</button><button class="btn btn-success btn-sm" >保存并新建</button>
+										</div>
+									</div>
+									<div class="form-block row">
+										<div class="form-add col-xs-10 col-xs-offset-1">
+											<form class="form-group">
+											<div class="form-group col-xs-6">
+												<div class="col-xs-100">
+													<label >机会名称：</label>
+												</div>
+												<div class="col-xs-8">
+													<input type="text" class="form-control" placeholder="">	
+												</div>							
+											</div>
+											<div class="form-group col-xs-6">
+												<div class="col-xs-100">
+													<label >类型：</label>
+												</div>
+												<div class="col-xs-8">
+													<select class="form-control">
+													<option>选择</option>
+													<option>A</option>
+													<option>B</option>
+													<option>C</option>
+													<option>D</option>
+													<option>E</option>
+												</select>
+												</div>							
+											</div>
+											<div class="form-group col-xs-6">
+												<div class="col-xs-100">
+													<label >金额：</label>
+												</div>
+												<div class="col-xs-8">
+													<input type="text" class="form-control" placeholder="">	
+												</div>							
+											</div>
+											<div class="form-group col-xs-6">
+												<div class="col-xs-100">
+													<label >开始日期：</label>
+												</div>
+												<div class="col-xs-8">
+													<input type="text" class="form-control date" onFocus="WdatePicker({lang:'zh-cn'})" placeholder="选择日期">
+												</div>							
+											</div>
+											<div class="form-group col-xs-6">
+												<div class="col-xs-100">
+													<label >状态：</label>
+												</div>
+												<div class="col-xs-8">
+													<select class="form-control">
+													<option>选择</option>
+													<option>处理中</option>
+													<option>已完成</option>
+												</select>
+												</div>							
+											</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<script>
+							$(document).ready(function(){
+								$("#add-05, #add-window-05-close").click(function(){
+									$("#add-window-05").fadeToggle(100);
+								});
+							});
+						</script>			
+						<!-- 新建业务机会结束 -->
+					<div class="tool">
+						<a id=""><span class="glyphicon glyphicon-unchecked detail-down-05 text-18 " aria-hidden="true" style="display:none"></span></a>
+						<a id=""><span class="glyphicon glyphicon-minus detail-up-05 text-18  " aria-hidden="true"></span></a>
+						<a id="set-05"><span class="glyphicon glyphicon-cog text-18" aria-hidden="true"></span></a>
+						<script type="text/javascript"> 
+							$(document).ready(function(){
+							  $(".detail-down-05").click(function(){
+								$(".detail-05").slideDown("fast");
+							  });
+							  $(".detail-up-05").click(function(){
+								$(".detail-05").slideUp("fast");
+							  });
+							  $(".detail-up-05").click(function(){
+								$(".detail-up-05").hide();										
+							  });
+							  $(".detail-up-05").click(function(){
+								$(".detail-down-05").show();
+							  });
+							  $(".detail-down-05").click(function(){
+								$(".detail-down-05").hide();
+							  });
+							  $(".detail-down-05").click(function(){
+								$(".detail-up-05").show();
+							  });
+							});
+						</script>	
+						<!-- 设置联系人字段显示 -->
+						<div id="set-window-05" class="tool-window">
+							<div class="tool-window-con">
+								<h1>设置</h1>
+								<a id="set-window-05-close" class="close"><span class="glyphicon glyphicon-remove-circle"></span></a>
+								<form>
+									<div class="all">
+										<h2>所有</h2>
+										<ul>
+											 <li><div class="checkbox"><label><input type="checkbox">订单编号</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">客户</label></div></li>
+											<!--<li><div class="checkbox"><label><input type="checkbox">数量</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">日期</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">操作</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">产品</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">单价</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">数量</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">日期</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">操作</label></div></li> -->
+										</ul>
+									</div>
+									<div class="btn-block">
+										<button class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-chevron-right"></span></button>
+										<button class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-chevron-left"></span></button>
+									</div>
+									<div class="display">
+										<h2>显示</h2>
+										<ul>
+											<li><div class="checkbox"><label><input type="checkbox">订单名称</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">订单类型</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">金额</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">开始日期</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">状态</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">操作</label></div></li>
+										</ul>
+									</div>
+									<button class="btn btn-success btn-sm" >保存</button>
+								</form>
+							</div>
+						</div>
+						<script>
+							$(document).ready(function(){
+								$("#set-05, #set-window-05-close").click(function(){
+								$("#set-window-05").fadeToggle(100);
+								});
+							});
+						</script>
+						<!-- 设置联系人字段显示结束 -->
+					</div>
+				</div>
+				<div class="detail-05">
+					<!--div class="tablt-list"-->
+					<table class="table">
+						<tr>
+							<th class="col-xs-2">机会名称</th>
+							<th class="col-xs-2">机会类型</th>
+							<th class="col-xs-2">金额</th>
+							<th class="col-xs-2">开始日期</th>
+							<th class="col-xs-2">状态</th>
+							<th class="col-xs-1">操作</th>
+						</tr>
+						<tr>
+							<td><a class="a-lg text-blue" href="">crm机会</a></td>
+							<td>标准订单</td>
+							<td>425000</td>
+							<td>2015-9-11</td>
+							<td>处理中</td>
+							<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+						</tr>
+						<tr>
+							<td><a class="a-lg text-blue" href="">HR机会</a></td>
+							<td>标准订单</td>
+							<td>425000</td>
+							<td>2015-9-11</td>
+							<td>处理中</td>
+							<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+						</tr>			
+					</table>
+					<!--/div-->
+				</div>				
+			</div>
+			<div class="mobule-division"></div>
+			<!-- 附件数据块 -->
+			<div class="mobule">
+				<div class="title">
+					<h1>附件</h1>
+					<div class="function">
+						<a id="addon-01" class="btn btn-success btn-sm">添加附件</a>
+					</div>
+					<!-- 添加附件 -->
+					<div id="addon-window-01" class="form-window ">
+						<div class="form-window-con width-700">
+							<div class="title">
+								<h3>添加附件：</h3>
+								<a id="addon-winodw-01-close" class="search-close "><span class="glyphicon glyphicon-remove-circle"></span></a>
+							</div>
+							<div class="window-search">
+								<form class="form-group">
+									<div class="form-group col-xs-12">
+										<div class="col-xs-2">
+											<label >文件：</label>
+										</div>
+										<div class="col-xs-8">
+											<input type="text" class="form-control" placeholder="">	
+										</div>
+										<div class="col-xs-1">
+											<a id="window-02" class="btn btn-success btn-sm">附件</a>
+										</div>						
+									</div>
+									<div class="form-group col-xs-12">
+										<div class="col-xs-2">
+											<label >文档标题：</label>
+										</div>
+										<div class="col-xs-8">
+											<input type="text" class="form-control" placeholder="">	
+										</div>							
+									</div>
+									<div class="form-group col-xs-12">
+										<div class="col-xs-2">
+											<label >文档类型：</label>
+										</div>
+										<div class="col-xs-8">
+											<select class="form-control">
+												<option>我的客户</option>
+												<option>我的客户</option>
+												<option>我的客户</option>
+												<option>我的客户</option>
+												<option>我的客户</option>
+											</select>	
+										</div>							
+									</div>
+									<div class="form-group col-xs-12">
+										<div class="col-xs-2">
+											<label >注释：</label>
+										</div>
+										<div class="col-xs-8">
+											<textarea type="text" class="form-control" placeholder=""></textarea>
+										</div>							
+									</div>
+									<div class="form-group">
+										<div class="col-xs-2">
+										</div>										
+										<div class="col-xs-8">
+											<button type="submit" class="btn margin-10 btn-success">保存</button>
+										</div>
+									</div>
+								</form>
+							</div>									
+						</div>
+					</div>
+					<script>
+						$(document).ready(function(){
+							$("#addon-01, #addon-winodw-01-close").click(function(){
+							$("#addon-window-01").fadeToggle(100);
+							});
+						});
+					</script>			
+					<!-- 添加附件结束-->
+					<div class="tool">
+						<a id=""><span class="glyphicon glyphicon-unchecked detail-down-06 text-18 " aria-hidden="true" style="display:none"></span></a>
+						<a id=""><span class="glyphicon glyphicon-minus detail-up-06 text-18  " aria-hidden="true"></span></a>
+						<a id="set-06"><span class="glyphicon glyphicon-cog text-18" aria-hidden="true"></span></a>
+						<script type="text/javascript"> 
+							$(document).ready(function(){
+							  $(".detail-down-06").click(function(){
+								$(".detail-06").slideDown("fast");
+							  });
+							  $(".detail-up-06").click(function(){
+								$(".detail-06").slideUp("fast");
+							  });
+							  $(".detail-up-06").click(function(){
+								$(".detail-up-06").hide();										
+							  });
+							  $(".detail-up-06").click(function(){
+								$(".detail-down-06").show();
+							  });
+							  $(".detail-down-06").click(function(){
+								$(".detail-down-06").hide();
+							  });
+							  $(".detail-down-06").click(function(){
+								$(".detail-up-06").show();
+							  });
+							});
+						</script>	
+						<!-- 设置附件字段显示 -->
+						<div id="set-window-06" class="tool-window">
+							<div class="tool-window-con">
+								<h1>设置</h1>
+								<a id="set-window-06-close" class="close"><span class="glyphicon glyphicon-remove-circle"></span></a>
+								<form>
+									<div class="all">
+										<h2>所有</h2>
+										<ul>
+											<li><div class="checkbox"><label><input type="checkbox">产品</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">单价</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">数量</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">日期</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">操作</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">产品</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">单价</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">数量</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">日期</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">操作</label></div></li>
+										</ul>
+									</div>
+									<div class="btn-block">
+										<button class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-chevron-right"></span></button>
+										<button class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-chevron-left"></span></button>
+									</div>
+									<div class="display">
+										<h2>显示</h2>
+										<ul>
+											<li><div class="checkbox"><label><input type="checkbox">产品</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">单价</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">数量</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">日期</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">操作</label></div></li>
+										</ul>
+									</div>
+									<button class="btn btn-success btn-sm" >保存</button>
+								</form>
+							</div>
+						</div>
+						<script>
+							$(document).ready(function(){
+								$("#set-06, #set-window-06-close").click(function(){
+								$("#set-window-06").fadeToggle(100);
+								});
+							});
+						</script>
+						<!-- 设置附件字段显示结束 -->
+					</div>
+				</div>
+				<div class="detail-06">
+					<!--div class="tablt-list"-->
+					<table class="table">
+						<tr>
+							<th class="col-xs-2">附件名称</th>
+							<th class="col-xs-2">附件类型</th>
+							<th class="col-xs-2">创建时间</th>
+							<th class="col-xs-2">创建人</th>
+							<th class="col-xs-1">操作</th>
+						</tr>
+						<tr>
+							<td><a class="a-lg text-blue" href="">合同扫描</a></td>
+							<td>图片</td>
+							<td>2015-9-9</td>
+							<td>张伟</td>
+							<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+						</tr>
+						<tr>
+							<td><a class="a-lg text-blue" href="">合同扫描</a></td>
+							<td>图片</td>
+							<td>2015-9-9</td>
+							<td>张伟</td>
+							<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+						</tr>
+						<tr>
+							<td><a class="a-lg text-blue" href="">合同扫描</a></td>
+							<td>图片</td>
+							<td>2015-9-9</td>
+							<td>张伟</td>
+							<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+						</tr>
+						<tr>
+							<td><a class="a-lg text-blue" href="">合同扫描</a></td>
+							<td>图片</td>
+							<td>2015-9-9</td>
+							<td>张伟</td>
+							<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+						</tr>
+						<tr>
+							<td><a class="a-lg text-blue" href="">合同扫描</a></td>
+							<td>图片</td>
+							<td>2015-9-9</td>
+							<td>张伟</td>
+							<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+						</tr>
+					</table>
+					<!--/div-->
+				</div>				
+			</div>
+			<div class="mobule-division"></div>		
+			<!-- 备注数据块 -->
+			<div class="mobule">
+				<div class="title">
+					<h1>备注</h1>
+					<div class="function">
+						<a id="add-07" class="btn btn-success btn-sm">新建备注</a><a class="btn btn-success btn-sm" href="">编辑全部</a>
+					</div>
+					<!-- 添加备注-->
+					<div id="add-window-07" class="form-window ">
+						<div class="form-window-con width-700">
+							<div class="title">
+								<h3>添加备注：</h3>
+								<a id="add-winodw-07-close" class="search-close "><span class="glyphicon glyphicon-remove-circle"></span></a>
+							</div>
+							<div class="window-search">
+								<form class="form-group">
+									<div class="form-group col-xs-12">
+										<div class="col-xs-2">
+											<label >标题：</label>
+										</div>
+										<div class="col-xs-8">
+											<input type="text" class="form-control" placeholder="">	
+										</div>							
+									</div>
+									<div class="form-group col-xs-12">
+										<div class="col-xs-2">
+											<label >类型：</label>
+										</div>
+										<div class="col-xs-8">
+											<select class="form-control">
+												<option>常规</option>
+												<option>特别</option>
+												<option>重要</option>
+												<option>中等</option>
+												<option>一般</option>
+											</select>	
+										</div>							
+									</div>
+									<div class="form-group col-xs-12">
+										<div class="col-xs-2">
+											<label >内容：</label>
+										</div>
+										<div class="col-xs-8">
+											<textarea type="text" class="form-control" placeholder=""></textarea>
+										</div>							
+									</div>
+									<div class="form-group">
+										<div class="col-xs-2">
+										</div>										
+										<div class="col-xs-8">
+											<button type="submit" class="btn margin-10 btn-success">保存</button>
+										</div>
+									</div>
+								</form>
+							</div>									
+						</div>
+					</div>
+					<script>
+						$(document).ready(function(){
+							$("#add-07, #add-winodw-07-close").click(function(){
+							$("#add-window-07").fadeToggle(100);
+							});
+						});
+					</script>			
+					<!-- 添加备注结束-->
+					<div class="tool">
+						<a id=""><span class="glyphicon glyphicon-unchecked detail-down-07 text-18 " aria-hidden="true" style="display:none"></span></a>
+						<a id=""><span class="glyphicon glyphicon-minus detail-up-07 text-18  " aria-hidden="true"></span></a>
+						<a id="set-07"><span class="glyphicon glyphicon-cog text-18" aria-hidden="true"></span></a>
+						<script type="text/javascript"> 
+							$(document).ready(function(){
+							  $(".detail-down-07").click(function(){
+								$(".detail-07").slideDown("fast");
+							  });
+							  $(".detail-up-07").click(function(){
+								$(".detail-07").slideUp("fast");
+							  });
+							  $(".detail-up-07").click(function(){
+								$(".detail-up-07").hide();										
+							  });
+							  $(".detail-up-07").click(function(){
+								$(".detail-down-07").show();
+							  });
+							  $(".detail-down-07").click(function(){
+								$(".detail-down-07").hide();
+							  });
+							  $(".detail-down-07").click(function(){
+								$(".detail-up-07").show();
+							  });
+							});
+						</script>	
+						<!-- 设置联系人字段显示 -->
+						<div id="set-window-07" class="tool-window">
+							<div class="tool-window-con">
+								<h1>设置</h1>
+								<a id="set-window-07-close" class="close"><span class="glyphicon glyphicon-remove-circle"></span></a>
+								<form>
+									<div class="all">
+										<h2>所有</h2>
+										<ul>
+											<li><div class="checkbox"><label><input type="checkbox">内容</label></div></li>
+											<!-- <li><div class="checkbox"><label><input type="checkbox">单价</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">数量</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">日期</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">操作</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">产品</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">单价</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">数量</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">日期</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">操作</label></div></li> -->
+										</ul>
+									</div>
+									<div class="btn-block">
+										<button class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-chevron-right"></span></button>
+										<button class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-chevron-left"></span></button>
+									</div>
+									<div class="display">
+										<h2>显示</h2>
+										<ul>
+											<li><div class="checkbox"><label><input type="checkbox">标题</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">类型</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">创建时间</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">创建人</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox">操作</label></div></li>
+										</ul>
+									</div>
+									<button class="btn btn-success btn-sm" >保存</button>
+								</form>
+							</div>
+						</div>
+						<script>
+							$(document).ready(function(){
+								$("#set-07, #set-window-07-close").click(function(){
+								$("#set-window-07").fadeToggle(100);
+								});
+							});
+						</script>
+						<!-- 设置联系人字段显示结束 -->
+					</div>
+				</div>
+				<div class="detail-07">
+					<!--div class="tablt-list"-->
+					<table class="table">
+						<tr>
+							<th class="col-xs-2">标题</th>
+							<th class="col-xs-2">类型</th>
+							<th class="col-xs-2">创建时间</th>
+							<th class="col-xs-2">创建人</th>
+							<th class="col-xs-1">操作</th>
+						</tr>
+						<tr>
+							<td><a class="a-lg text-blue" href="">客户相关情况说明</a></td>
+							<td>常规</td>
+							<td>2015-9-5</td>
+							<td>王大鹏</td>
+							<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+						</tr>
+						<tr>
+							<td><a class="a-lg text-blue" href="">客户相关情况说明</a></td>
+							<td>常规</td>
+							<td>2015-9-5</td>
+							<td>王大鹏</td>
+							<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+						</tr>
+						<tr>
+							<td><a class="a-lg text-blue" href="">客户相关情况说明</a></td>
+							<td>常规</td>
+							<td>2015-9-5</td>
+							<td>王大鹏</td>
+							<td><a class="text-blue">编辑</a>&nbsp&nbsp&nbsp&nbsp<a class="text-red">删除</a></td>
+						</tr>						
+					</table>
+					<!--/div-->
+				</div>				
+			</div>
+		</div>
+		<div class="side">
+			<ul>
+				<li><a href=""><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></a></li>
+				<li><a id="side-nav-btn"><span class="glyphicon glyphicon glyphicon-list" aria-hidden="true"></span></a>
+					<ul id="side-nav" class="side-nav">
+						<li><a href="">分析</a></li>
+						<li><a href="">系统</a></li>
+						<li><a href=""><span class="glyphicon glyphicon-plus"></span>添加快捷菜单</a></li>				
+					</ul>
+					<script>
+						$(document).ready(function(){
+							$("#side-nav-btn").click(function(){
+							$("#side-nav").fadeToggle(100);
+							});
+						});
+					</script>
+				</li>
+				<li><a href=""><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">
+		<p>Copyright © 2015 捷泰克国际有限公司</p>
+	</div>
+</div>
+</body>
+</html>
