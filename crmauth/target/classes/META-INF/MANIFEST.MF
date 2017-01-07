@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-Title: authsvc
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.crm.auth
+Build-Jdk: 1.7.0_79
+Built-By: I076641
+Created-By: Maven Integration for Eclipse
+Main-Class: com.crm.auth.authsvc.Application
+

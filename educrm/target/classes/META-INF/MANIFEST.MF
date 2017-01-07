@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Implementation-Vendor: Pivotal Software, Inc.
+Build-Number: LOCAL
+Implementation-Title: EDUCRM
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.educrm
+Build-Jdk: 1.7.0_79
+Built-By: I076641
+Specification-Title: EDUCRM
+Created-By: Maven Integration for Eclipse
+Specification-Version: 0.0.1-SNAPSHOT
+Main-Class: com.educrm.Application
+

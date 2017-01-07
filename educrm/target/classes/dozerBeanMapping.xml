@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Important: The configuration is just for fundamental setup of Dozer in API framework. 
+    For business/application concrete configuration such as customized converters, BO/DTO mappings, 
+    please consider to place into apiDozerBeanMapping.xml instead!! -->
+   
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://dozer.sourceforge.net 
+    http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+    <configuration>
+<!--         <wildcard>true</wildcard>
+        <map-null>false</map-null>
+        <relationship-type>non-cumulative</relationship-type> -->
+        
+        <copy-by-references>
+            <copy-by-reference>
+                org.joda.time.DateTime
+            </copy-by-reference>
+            <copy-by-reference>
+                org.joda.time.LocalDate
+            </copy-by-reference>
+        </copy-by-references>
+
+    </configuration>
+</mappings> 
